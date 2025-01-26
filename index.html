@@ -13,28 +13,35 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-
         <!--Header with Navigation-->
         <header>
             <div class="container">
                 <a style="text-decoration: none; cursor: default" href="">
-                    <p class="logo logo--text">Portfolio</p>
+                    <p class="header__logo">Portfolio</p>
                 </a>
                 <nav class="header__nav-bar">
-                    <ul class="header__nav-links">
-                        <li class="header__nav-link">
-                            <a href="#home">Home</a>
-                        </li>
-                        <li class="header__nav-link">
-                            <a href="#about">About</a>
-                        </li>
-                        <li class="header__nav-link">
-                            <a href="#project">Projects</a>
-                        </li>
-                        <li class="header__nav-link">
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
+                    <label>
+                        <input type="checkbox" />
+                        <div class="menu-toggle">
+                            <span class="top line"></span>
+                            <span class="mid line"></span>
+                            <span class="bottom line"></span>
+                        </div>
+                        <ul class="header__nav-links">
+                            <li class="header__nav-link">
+                                <a href="#home">Home</a>
+                            </li>
+                            <li class="header__nav-link">
+                                <a href="#about">About</a>
+                            </li>
+                            <li class="header__nav-link">
+                                <a href="#project">Projects</a>
+                            </li>
+                            <li class="header__nav-link">
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </label>
                 </nav>
             </div>
         </header>
@@ -42,9 +49,9 @@
         <!--Main content of the page-->
         <main>
             <div class="container">
-
                 <!--Home Section-->
                 <section id="home" class="home__section">
+                    <div class="grid"></div>
                     <div class="home__section-intro">
                         <h1>Welcome to Our Portfolio</h1>
                         <p>
@@ -63,7 +70,9 @@
 
                 <!--About Section-->
                 <section id="about" class="about__section">
-                    <h2 class="about__section-header">About</h2>
+                    <h2 class="about__section-header">
+                        Ab<span class="text">out</span>
+                    </h2>
                     <div class="about__section-container">
                         <article class="about__section-item">
                             <img src="images/profile.png" alt="Profile 1" />
@@ -83,7 +92,7 @@
                             </div>
                         </article>
                         <article class="about__section-item">
-                            <img src="images/profile2.png" alt="Profile 2" />
+                            <img src="images/profile3.png" alt="Profile 2" />
                             <div class="about__section-text">
                                 <h3 class="about__section-name">
                                     Irish Grace Cadao
@@ -149,11 +158,23 @@
 
                         <article class="project__section-item">
                             <div class="project__image-container">
-                                <img src="images/project3.png" alt="Project 3" />
+                                <img
+                                    src="images/project3.png"
+                                    alt="Project 3"
+                                />
                                 <span>Portfolio</span>
                             </div>
                             <p>
-                                This portfolio webpage features a structured layout comprising a header, navigation menu, home, about, services, contact, and footer sections. It integrates images, headings, and buttons to deliver an engaging user experience. The contact section includes a form for user input, while the services section showcases offerings with visually distinct cards. The design prioritizes accessibility and maintains a polished aesthetic throughout.
+                                This portfolio webpage features a structured
+                                layout comprising a header, navigation menu,
+                                home, about, services, contact, and footer
+                                sections. It integrates images, headings, and
+                                buttons to deliver an engaging user experience.
+                                The contact section includes a form for user
+                                input, while the services section showcases
+                                offerings with visually distinct cards. The
+                                design prioritizes accessibility and maintains a
+                                polished aesthetic throughout.
                             </p>
                         </article>
                     </div>
@@ -163,18 +184,20 @@
                 <section id="contact" class="contact__section">
                     <h2 class="contact__header">Contact</h2>
                     <form class="contact__form-container">
-                        <input
-                            type="text"
-                            id="name"
-                            placeholder="Enter your name*"
-                            required
-                        />
-                        <input
-                            type="email"
-                            id="name"
-                            placeholder="Enter your email*"
-                            required
-                        />
+                        <div class="contact__input-group">
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Enter your name*"
+                                required
+                            />
+                            <input
+                                type="email"
+                                id="name"
+                                placeholder="Enter your email*"
+                                required
+                            />
+                        </div>
                         <textarea
                             rows="6"
                             placeholder="Message here..."
@@ -194,15 +217,23 @@
                 <div class="footer__nav-container">
                     <ul class="footer__nav-socials">
                         <h4>Socials</h4>
-                        <li class="footer__nav-link"><a href="">Instagram</a></li>
+                        <li class="footer__nav-link">
+                            <a href="">Instagram</a>
+                        </li>
                         <li class="footer__nav-link"><a href="">Twitter</a></li>
                         <li class="footer__nav-link"><a href="">Threads</a></li>
-                        <li class="footer__nav-link"><a href="">LinkedIn</a></li>
+                        <li class="footer__nav-link">
+                            <a href="">LinkedIn</a>
+                        </li>
                     </ul>
                     <ul class="footer__nav-links">
                         <h4>Navigation</h4>
-                        <li class="footer__nav-link"><a href="#home">Home</a></li>
-                        <li class="footer__nav-link"><a href="#about">About</a></li>
+                        <li class="footer__nav-link">
+                            <a href="#home">Home</a>
+                        </li>
+                        <li class="footer__nav-link">
+                            <a href="#about">About</a>
+                        </li>
                         <li class="footer__nav-link">
                             <a href="#project">Projects</a>
                         </li>
