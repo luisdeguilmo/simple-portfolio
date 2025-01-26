@@ -259,26 +259,28 @@ footer h4 {
 }
 
 .footer__nav-container {
+    max-width: 700px;
     padding: 20px;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
     display: flex;
-    gap: 10rem;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .footer__nav-container ul {
+    flex: 1 200px;
     list-style-type: none;
+    text-wrap: nowrap;
+}
+
+.footer__nav-container ul:last-of-type {
+    margin-top: 2.5rem;
 }
 
 .footer__nav-socials h4,
 .footer__nav-links h4,
 .footer__nav-link {
     margin-bottom: 5px;
-}
-
-.footer__nav-links h4,
-.footer__nav-link {
-    text-align: left;
 }
 
 .footer__nav-link a {
@@ -327,6 +329,10 @@ footer h4 {
 
     .contact__form-container * {
         width: 60%;
+    }
+
+    .footer__nav-container ul:last-of-type {
+        margin: 0;
     }
 }
 
