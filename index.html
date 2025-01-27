@@ -259,5 +259,13 @@
                 &copy; 2025 Portfolio. All Rights Reserved.
             </p>
         </footer>
+
+        <script>
+            document.querySelectorAll(".header__nav-link a").forEach(item => {
+                item.addEventListener("click", () => {
+                    document.querySelector(".menu-toggle").checked = false;
+                });
+            });
+        </script>
     </body>
 </html>
