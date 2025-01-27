@@ -421,7 +421,7 @@ footer h4 {
         width: 75%;
     }
 
-    .footer__nav-container ul:not(:first-of-type) {
+    .footer__nav-container ul {
         margin-top: 2rem;
     }   
 }
