@@ -263,7 +263,7 @@
         <script>
             document.querySelectorAll(".header__nav-link a").forEach(item => {
                 item.addEventListener("click", () => {
-                    document.querySelector(".menu-toggle").checked = false;
+                    document.querySelector("input[type="checkbox"]).checked = false;
                 });
             });
         </script>
