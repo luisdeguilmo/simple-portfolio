@@ -11,6 +11,10 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <!--Header with Navigation-->
@@ -215,17 +219,31 @@
         <footer>
             <div class="footer__nav">
                 <div class="footer__nav-container">
-                    <ul class="footer__nav-socials">
-                        <h4>Socials</h4>
-                        <li class="footer__nav-link">
-                            <a href="">Instagram</a>
-                        </li>
-                        <li class="footer__nav-link"><a href="">Twitter</a></li>
-                        <li class="footer__nav-link"><a href="">Threads</a></li>
-                        <li class="footer__nav-link">
-                            <a href="">LinkedIn</a>
-                        </li>
-                    </ul>
+                    <div class="footer__details">
+                        <h3 class="footer__header">Portfolio</h3>
+                        <p>
+                            We are third-year Bachelor of Science in Information
+                            Technology students at Bohol Island State
+                            University, Balilihan Campus.
+                        </p>
+                        <ul class="footer__nav-socials">
+                            <li class="footer__nav-link">
+                                <a href="https://www.instagram.com/shiri.cad/"
+                                    ><i class="fa-brands fa-instagram fa-lg"></i
+                                ></a>
+                            </li>
+                            <li class="footer__nav-link">
+                                <a href="https://www.facebook.com/RishiCad"
+                                    ><i class="fa-brands fa-facebook fa-lg"></i
+                                ></a>
+                            </li>
+                            <li class="footer__nav-link">
+                                <a href="https://x.com/CadaoGrace19"
+                                    ><i class="fa-brands fa-x-twitter fa-lg"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
                     <ul class="footer__nav-links">
                         <h4>Navigation</h4>
                         <li class="footer__nav-link">
@@ -261,9 +279,11 @@
         </footer>
 
         <script>
-            document.querySelectorAll(".header__nav-link a").forEach(item => {
+            document.querySelectorAll(".header__nav-link a").forEach((item) => {
                 item.addEventListener("click", () => {
-                    document.querySelector("input[type='checkbox']").checked = false;
+                    document.querySelector(
+                        "input[type='checkbox']"
+                    ).checked = false;
                 });
             });
         </script>
